@@ -1,0 +1,40 @@
+{
+  "name": "scraptcha",
+  "version": "0.0.3",
+  "description": "Scraptcha provides a method of user validation (not a bot) for submission forms.",
+  "author": "Darren Decker <deckerd@guruassist.com>",
+  "contributors": [
+    {
+      "name": "Darren Decker",
+      "email": "deckerd@guruassist.com"
+    }
+  ], 
+  "scripts": {
+    "test": "test/",
+    "start": "node file-server.js",
+    "prepublish": ""
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deckerld/scraptcha"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "keywords": [
+    "scraptcha",
+    "form validation",
+    "form user validation",
+    "form entry verification",
+    "form entry validation"
+  ],
+  "dependencies": {
+    "base64-img": "^1.0.3",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "preferGlobal": true,
+  "private": false,
+  "license": "MIT"
+}

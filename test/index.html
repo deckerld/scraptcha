@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Scraptcha Demo</title>
+<link rel="stylesheet" href="/assets/style.css" />
+<script src="/assets/main.js"></script>
+</head>
+<body>
+    <div id="formContainer" class="scraptcha-form-container">
+        <form name="scraptcha-form" id="scraptchaForm" action="" method="post">        
+            <div id="scraptchaContainer" class="scraptcha-container">
+                <div id="scraptchaCodeTable" class="scraptcha-code-table">
+                    <div class="scraptcha-code-row" id="scraptchaCodeRow">
+                        <div class="scraptcha-code-cell" id="si01"><img src="/images/green/i_cha_4.gif" /></div>
+                        <div class="scraptcha-code-cell" id="si02"><img src="/images/green/i_cha_6.gif" /></div>
+                        <div class="scraptcha-code-cell" id="si03"><img src="/images/green/i_cha_13.gif" /></div>
+                        <div class="scraptcha-code-cell" id="si04"><img src="/images/green/i_cha_34.gif" /></div>
+                        <div class="scraptcha-code-cell" id="si05"><img src="/images/green/i_cha_56.gif" /></div>               
+                    </div>
+                </div>
+            </div>
+            <div class="scraptcha-spacer-4"></div>
+            <button name="refresh" type="button" id="scraptchaRefresh">Refresh Image</button>            
+            <div class="scraptcha-spacer-7"></div>
+            <span id="scraptchaReply" class="scraptcha-reply"></span>     
+            <input placeholder="Enter the text from the above image." tabindex="4" name="Code" type="text" id="scraptchaCode" required />            
+            <div class="scraptcha-spacer-6"></div>
+            <button name="submit" type="button" id="scraptchaSubmit">Submit</button>            
+        </form>    
+    </div>
+</body>
+</html>
