@@ -25,10 +25,6 @@ server.get('/scraptcha/:id', function (req, res) {
 server.get('/scraptchaValidate/:data', function (req, res) {
     res.send(scraptcha.verify(req));
 });
-
-server.get('/', function (req, res) {    
-    res.sendFile(path.join(__dirname + '/index.html'));
-});
 ```
 
 ## Installation
