@@ -1,6 +1,6 @@
 {
   "name": "scraptcha",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Scraptcha provides a method of user validation (not a bot) for submission forms.",
   "author": "Darren Decker <deckerd@guruassist.com>",
   "contributors": [

@@ -5,12 +5,10 @@ Scraptcha provides a method of user validation for submission forms.
 var express = require('express');
 var scraptcha = require('scraptcha');
 var path = require('path');
- 
-   
+
 var imageInformation = {path:          "./images/green/",
                         filePrefix:    "i_cha_",
                         fileExtension: ".gif"};
-
 
 scraptcha.initialize(imageInformation);
 
@@ -19,18 +17,16 @@ server.use(express.static('./'));
 server.listen(8800);
 console.log("Server is listening on http://localhost:8800");
 
-
+// "id" compensates for a browser caching bug.
 server.get('/scraptcha/:id', function (req, res) {
     res.send(scraptcha.getHTMLSnippet());
 });
-
 
 server.get('/scraptchaValidate/:data', function (req, res) {
     res.send(scraptcha.verify(req));
 });
 
-
-server.get('/page/:data', function (req, res) {    
+server.get('/', function (req, res) {    
     res.sendFile(path.join(__dirname + '/index.html'));
 });
 ```
