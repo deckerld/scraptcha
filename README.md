@@ -4,7 +4,6 @@ Scraptcha provides a method of user validation for submission forms.
 ```js
 var express = require('express');
 var scraptcha = require('scraptcha');
-var path = require('path');
 
 var imageInformation = {path:          "./images/green/",
                         filePrefix:    "i_cha_",

@@ -1,6 +1,5 @@
 var express = require('express');
 var scraptcha = require('scraptcha');
-var path = require('path');
 
  // Scraptcha images source information.   
 var imageInformation = {path:          "./images/green/",
@@ -16,7 +15,7 @@ server.use(express.static('./'));
 server.listen(8800);
 console.log("Server is listening on http://localhost:8800");
 
-// Gets the scratcha code sequence. "id" compensates for browser (to be discovered) cache update bug. 
+// Gets the scratcha code sequence. "id" compensates for a browser update bug. 
 server.get('/scraptcha/:id', function (req, res) {
     res.send(scraptcha.getHTMLSnippet());
 });
