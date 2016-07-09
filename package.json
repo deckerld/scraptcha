@@ -1,6 +1,6 @@
 {
   "name": "scraptcha",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Scraptcha provides a method of user validation (not a bot) for submission forms.",
   "author": "Darren Decker <deckerd@guruassist.com>",
   "contributors": [
@@ -10,7 +10,7 @@
     }
   ], 
   "scripts": {
-    "test": "test/",
+    "test": "",
     "start": "node file-server.js",
     "prepublish": ""
   },
@@ -26,8 +26,13 @@
     "scraptcha",
     "form validation",
     "form user validation",
+    "user verification",
     "form entry verification",
-    "form entry validation"
+    "form entry validation",
+    "not a bot",
+    "not a robot",
+    "email validation",
+    "email verification"
   ],
   "dependencies": {
     "base64-img": "^1.0.3",
