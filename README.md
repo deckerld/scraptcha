@@ -1,4 +1,7 @@
 # Scraptcha
+
+<img align="right" height="260" src="http://www.darrendecker.com/images/icons/scraptchaNPMJS.svg">
+
 Scraptcha provides a method of user validation for submission forms.
 
 ```js
