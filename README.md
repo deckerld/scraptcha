@@ -19,7 +19,7 @@ server.use(express.static('./'));
 server.listen(8800);
 console.log("Server is listening on http://localhost:8800");
 
-// "id" compensates for a browser caching bug.
+// "id" adds name variety to compensate for browser image caching.
 server.get('/scraptcha/:id', function (req, res) {
     res.send(scraptcha.getHTMLSnippet());
 });
