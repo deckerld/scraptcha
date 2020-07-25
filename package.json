@@ -1,14 +1,14 @@
 {
   "name": "scraptcha",
-  "version": "1.0.0",
-  "description": "Scraptcha provides a method of user validation (not a bot) for submission forms.",  
+  "version": "1.0.1",
+  "description": "Scraptcha provides a method of user validation (not a bot) for submission forms.",
   "author": "Darren Decker <me@darrendecker.com>",
   "contributors": [
     {
       "name": "Darren Decker",
       "email": "me@darrendecker.com"
     }
-  ], 
+  ],
   "scripts": {
     "test": "",
     "start": "node ./test/file-server.js",
@@ -21,7 +21,7 @@
   },
   "bugs": {
     "url": ""
-  },  
+  },
   "keywords": [
     "scraptcha",
     "form validation",
@@ -35,8 +35,8 @@
     "email verification"
   ],
   "dependencies": {
-    "base64-img": "^1.0.3",
-    "express": "^4.14.0"
+    "base64-img": "^1.0.4",
+    "express": "^4.17.1"
   },
   "devDependencies": {},
   "preferGlobal": true,
