@@ -16,7 +16,6 @@ var scraptcha = {
     var eSC = document.getElementById('scraptchaCodeRow');  
     var eFCPadding = window.getComputedStyle(eFC).getPropertyValue('padding');
     var alignLeft = (eFC.clientWidth/2 - eSC.clientWidth/2) - eFCPadding.slice(0,eFCPadding.length-2)/2;
-    document.getElementById('scraptchaContainer').style.left = alignLeft + "px";
   },
 
   updateDivContents: function(url, str){

@@ -2,7 +2,7 @@ var express = require('express');
 var scraptcha = require('scraptcha');
 
  // Scraptcha images source information.   
-var imageInformation = {path:          "./images/green/",
+var imageInformation = {path:          __dirname + "/images/green/",
                         filePrefix:    "i_cha_",
                         fileExtension: ".gif"};
 
@@ -11,7 +11,7 @@ scraptcha.initialize(imageInformation);
 
 // Static file server.
 var server = new express();
-server.use(express.static('./'));
+server.use(express.static(__dirname));
 server.listen(8800);
 console.log("Server is listening on http://localhost:8800");
 

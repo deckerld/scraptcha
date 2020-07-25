@@ -139,14 +139,17 @@ var scraptcha = {
 function scraptchaShuffle(){
     var tmpCodeArray = new Array(90);
     var tmpImgArray = new Array(90);
+    var loopTimeoutCntr = 500;
+    var loopCnt = 0;
 
     checkLength();
     
     function checkLength(){
         if(scraptchaBase64Img.length == 90){
             shuffle();
-        } else {
-            checkLength();
+        } else {            
+            if(++loopCnt > loopTimeoutCntr) return console.error('There was a problem initializing the images.');                
+            setTimeout(function(){checkLength()}, 2);
         }
     }
 

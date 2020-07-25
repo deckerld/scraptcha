@@ -8,24 +8,28 @@ Scraptcha provides a method of user validation for submission forms.
 var express = require('express');
 var scraptcha = require('scraptcha');
 
-var imageInformation = {path:          "./images/green/",
+ // Scraptcha images source information.   
+var imageInformation = {path:          __dirname + "/images/green/",
                         filePrefix:    "i_cha_",
                         fileExtension: ".gif"};
 
+// Initialize the Scraptcha data.
 scraptcha.initialize(imageInformation);
 
+// Static file server.
 var server = new express();
-server.use(express.static('./'));
+server.use(express.static(__dirname));
 server.listen(8800);
 console.log("Server is listening on http://localhost:8800");
 
-// "id" adds name variety to compensate for browser image caching.
+// Gets the scratcha code sequence. The "id" compensates for a browser update restriction. 
 server.get('/scraptcha/:id', function (req, res) {
     res.send(scraptcha.getHTMLSnippet());
 });
 
+// Returns validation response.
 server.get('/scraptchaValidate/:data', function (req, res) {
-    res.send(scraptcha.verify(req));
+    res.send(scraptcha.verify(req));    
 });
 ```
 
@@ -46,8 +50,8 @@ $ npm install scraptcha
 
 ## Quick Start
 
-Reference files are located in the 'test' folder.  Setup a Express static server 
-using the above example.  Start the server.
+Reference files are located in the 'test' folder.  Start the example server by navigating to the ./node_modules/scraptcha directory
+from the command prompt and perform the command "npm start" or "node ./test/file-server.js".
 
 See the 'submit: function(){...}' in the 'main.js' file for end user form adaptation.
 

@@ -19,11 +19,13 @@ body {
     height: 1px;
 }
 .scraptcha-container{    
+    display: inline-block;
+    margin: auto;        
     position: relative;
     visibility: hidden;
 }
 .scraptcha-code-table{    
-    display: table;            
+    display: table;      
     position: relative;
 }
 .scraptch-code-row{    
@@ -33,7 +35,7 @@ body {
     display: table-cell;        
 }
 #scraptchaForm {	
-	margin-right: 20px;
+    margin-right: 20px;
 }
 #scraptchaForm input[type="text"]{    
 	width:99%;
@@ -71,6 +73,7 @@ body {
 	width:100%;
     margin: 20px auto;
     padding: 14px;	
+    text-align: center;
 	position:relative;
     z-index: 5;
 }
